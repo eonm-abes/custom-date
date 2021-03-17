@@ -8,11 +8,23 @@ export class CustomDate {
 
   constructor({ month = 0, year = 0 }: DateConfig = {}) {
     let date = new Date(Date.now());
-
-    date.setMonth(date.getMonth() + month);
-    date.setFullYear(date.getFullYear() + year);
-
     this.date = date;
+
+    this.month(month);
+    this.year(year);
+  }
+
+  tweak({ month = 0, year = 0 }: DateConfig) {
+    this.month(month);
+    this.year(year);
+  }
+
+  month(month: number) {
+    this.date.setMonth(this.date.getMonth() + month);
+  }
+
+  year(year: number) {
+    this.date.setFullYear(this.date.getFullYear() + year);
   }
 
   to_string(): string {
