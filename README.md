@@ -1,8 +1,8 @@
 <div align="center">
 
-# Custom Date
+# Custom Date 📯
 
-_Computes custom dates within Postman tests and prerequest scripts_
+_Computes custom dates within Postman's tests and prerequest scripts_
 
 [![build](https://github.com/eonm-abes/custom-date/actions/workflows/build.yml/badge.svg)](https://github.com/eonm-abes/custom-date/actions/workflows/build.yml)
 [![Latest Build](https://img.shields.io/badge/%F0%9F%93%A6%20lastest%20build-custom%20date%20.js-yellow)](https://github.com/eonm-abes/custom-date/releases/latest/download/custom-date.js)
