@@ -12,7 +12,7 @@ _Computes custom dates within Postman's tests and prerequest scripts_
 
 </div>
 
-# Install
+## Install
 
 You have to copy the content of the [custom-date.js script](https://github.com/eonm-abes/custom-date/releases/latest/download/custom-date.js) inside your PM global variables (`Environments > Globals`) :
 
@@ -20,7 +20,7 @@ You have to copy the content of the [custom-date.js script](https://github.com/e
 | ------------ | ------------------------------ | ------------------------------ |
 | `customDate` | `paste customDate script here` | `paste customDate script here` |
 
-# Usage
+## Usage
 
 Inside your prerequest script and/or your tests :
 
