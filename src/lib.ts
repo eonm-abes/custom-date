@@ -12,19 +12,25 @@ export class CustomDate {
 
     this.month(month);
     this.year(year);
+
+    return this;
   }
 
-  tweak({ month = 0, year = 0 }: DateConfig) {
+  tweak({ month = 0, year = 0 }: DateConfig): CustomDate {
     this.month(month);
     this.year(year);
+
+    return this;
   }
 
-  month(month: number) {
+  month(month: number): CustomDate {
     this.date.setMonth(this.date.getMonth() + month);
+    return this;
   }
 
-  year(year: number) {
+  year(year: number): CustomDate {
     this.date.setFullYear(this.date.getFullYear() + year);
+    return this;
   }
 
   to_string(): string {
