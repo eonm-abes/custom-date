@@ -39,7 +39,7 @@ today.year(2)
 // = today +2 years
 
 today.month(2)
-// = today +2 year +2 months
+// = today +2 years +2 months
 
 today.tweak({month:-2, year: -2})
 // = today
