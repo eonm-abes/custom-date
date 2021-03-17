@@ -34,12 +34,15 @@ let future_date = new customDate.customDate({month:3});
 console.log(future_date.to_string())
 
 let today = new customDate.customDate();
-// = today +2 years
+
 today.year(2)
-// = today +2 year +2 months
+// = today +2 years
+
 today.month(2)
-// = today
+// = today +2 year +2 months
+
 today.tweak({month:-2, year: -2})
+// = today
 
 console.log(today.to_string())
 ```
