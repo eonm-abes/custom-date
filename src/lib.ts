@@ -1,4 +1,4 @@
-interface DateConfig {
+interface dateConfig {
   month?: number;
   year?: number;
 }
@@ -6,7 +6,7 @@ interface DateConfig {
 export class customDate {
   date: Date;
 
-  constructor({ month = 0, year = 0 }: DateConfig = {}) {
+  constructor({ month = 0, year = 0 }: dateConfig = {}) {
     let date = new Date(Date.now());
     this.date = date;
 
@@ -16,19 +16,19 @@ export class customDate {
     return this;
   }
 
-  tweak({ month = 0, year = 0 }: DateConfig): CustomDate {
+  tweak({ month = 0, year = 0 }: dateConfig): customDate {
     this.month(month);
     this.year(year);
 
     return this;
   }
 
-  month(month: number): CustomDate {
+  month(month: number): customDate {
     this.date.setMonth(this.date.getMonth() + month);
     return this;
   }
 
-  year(year: number): CustomDate {
+  year(year: number): customDate {
     this.date.setFullYear(this.date.getFullYear() + year);
     return this;
   }
