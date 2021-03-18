@@ -3,7 +3,7 @@ interface DateConfig {
   year?: number;
 }
 
-export class CustomDate {
+export class customDate {
   date: Date;
 
   constructor({ month = 0, year = 0 }: DateConfig = {}) {
